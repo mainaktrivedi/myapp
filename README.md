@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+   * app/controller/events_controller.rb - has two implementation to retrieve events along with create action to create event
 
-* Ruby version
+   * app/models - have event, host and org models
+   
+   * spec/controller/events_controller_spec.rb
 
-* System dependencies
+   * Kept hostname unique based on scope defined
+   
+   * Index for host name can be added for performance however have kept things limited to scope defined.
 
-* Configuration
+   * Please disregard any additional items like widget etc. 
 
-* Database creation
+   * Will be more than happy to answer any questions
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+   * mainak_trivedi@yahoo.com
