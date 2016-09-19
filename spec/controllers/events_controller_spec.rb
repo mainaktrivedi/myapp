@@ -132,6 +132,10 @@ describe EventsController, type: :controller do
         post :create, params: post_params
       end
 
+      let :events_count do
+        Event.count
+      end
+
     context "with valid params" do
 
       before do
@@ -150,6 +154,10 @@ describe EventsController, type: :controller do
         expect(response.status).to eq(201)
       end
 
+      it "returns no error" do
+        expect(JSON.parse(response.body)["description"]).to eq("testeventABCD")
+        expect(JSON.parse(response.body)["id"]).to be_present
+      end
 
     end
 

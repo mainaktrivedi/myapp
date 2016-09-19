@@ -49,7 +49,7 @@
     	end
     	
         def event_params
-        	params.permit(:occurred_at, :description, :hostname, :orgname)
+        	params.require(:event).permit(:occurred_at, :description, :hostname, :orgname)
         end
 
         def host
