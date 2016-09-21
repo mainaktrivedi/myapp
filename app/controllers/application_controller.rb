@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   def hello
   	event = Event.first
-  	string s = "Hello World!"
+  	s = "Hello World!"
   	s += event.description unless event.nil?
     render html: s
   rescue Exception => e
