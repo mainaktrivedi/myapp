@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'application#hello'	
   resources :widgets
   resources :events, only: [:index, :create] 
   get 'events/query/org/:orgname(/host/:hostname)', to: 'events#query', as: :events_query
