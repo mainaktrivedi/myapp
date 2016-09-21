@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
   	string s = "Hello World!"
   	s += event.description unless event.nil?
     render html: s
+  rescue Exception => e
+    render html: e.message  
   end
 
 end
