@@ -7,7 +7,6 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
   </head>
 
   <body>
@@ -15,12 +14,10 @@
     
        <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
-       <table border="0"> 
-       <tr class = "col-md-50">
-         <td class="col-md-8">
-            <div id="test2"></div>
-         </td>
-         <td class="col-md-42">
+       <table> 
+       <tr>
+         <td><div id="test1"></div></td>
+         <td>
             <%= yield %>
           </td>
         </tr>

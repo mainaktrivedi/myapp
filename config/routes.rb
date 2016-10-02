@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :models
+  get 'users/new'
+
   root 'application#hello'	
   resources :widgets
   resources :events, only: [:index, :create] 
