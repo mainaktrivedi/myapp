@@ -52,9 +52,7 @@ group :production do
 end
 
 gem 'bootstrap-sass'
-
 gem 'devise'
-
 gem "autoprefixer-rails"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
