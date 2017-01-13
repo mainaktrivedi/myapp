@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
-  before_action :authenticate_model!
+  #before_action :authenticate_model!
 
   def hello
   	event = Event.first
